@@ -1,0 +1,5 @@
+- name: Main installation
+  hosts: debian
+  roles:
+    - hello
+
