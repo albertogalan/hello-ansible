@@ -1,0 +1,12 @@
+
+all:
+  children:
+    debian:
+      hosts:
+        127.0.0.1
+      vars:
+        myname: Alberto2
+
+
+
+
