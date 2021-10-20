@@ -1,2 +1,2 @@
 - debug:
-    msg:  "Hello {{ myname2 }} "
+    msg:  "Hello {{ myname }} "
