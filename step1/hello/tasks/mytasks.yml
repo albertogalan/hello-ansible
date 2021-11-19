@@ -1,0 +1,33 @@
+
+- debug:
+    msg:  "Hello {{ myname[-1]  }} "
+
+- debug:
+    msg: "groups {{ group_names| join('/') }}"
+
+- name: switch the rest of the playbook
+  set_fact:
+    ansible_connection: local
+
+- shell:
+    cmd: ls
+  become: yes
+ 
+
+  #- name: Simple PUT operation
+  #  amazon.aws.aws_s3:
+  #    bucket: mybucket
+  #    object: /my/desired/key.txt
+  #    src: /usr/local/myfile.txt
+  #    mode: put
+  #    region: eu-central-1
+
+
+- debug:
+    msg: "{{ fruits | filter type='color' | selectattr('color','equalto','red') }}"
+  loop: 
+
+- shell:
+    cmd: ls
+  become: yes
+ 

@@ -1,2 +1,5 @@
-- debug:
-    msg:  "Hello {{ myname }} "
+#- import_tasks: mytask.yml
+
+- import_tasks: ios.yml
+
+ 

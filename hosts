@@ -3,8 +3,19 @@ all:
   children:
     spain:
       hosts:
-        127.0.0.1
+        127.0.0.1:
+          myname: alberto
+        192.168.1.2:
       vars:
-        myname: Alberto2
+        myname: John
         ansible_connection: local
+        #ansible_connection: network_cli
         ansible_python_interpreter: '{{ ansible_playbook_python }}'
+        ansible_become_password : til;18
+        fruits:
+          - fruit: apple
+            color: red
+          - fruit: pear
+            color: yellow
+          - fruit: grapefruit
+            color: yellow
